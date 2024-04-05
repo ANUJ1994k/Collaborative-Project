@@ -18,6 +18,7 @@
             body {
                 margin: 0;
                 font-family: Arial, sans-serif;
+                position: relative;
             }
     
             .navbar {
@@ -126,6 +127,23 @@
                 justify-content: end;
                 align-items: flex-end;
             }
+            .msg-circle{
+                position: absolute;
+                cursor: pointer;
+                height: 64px;
+                width: 64px;
+                border-radius: 50%;
+                background-color: rgb(0, 0, 0);
+                bottom: 25px;
+                right: 25px;
+            }
+            .btm-icon{
+                font-size: 30px;
+                display: inline-block;
+                margin-top: 18px;
+                margin-left: 18px;
+                color: #dbdbdb;
+            }
         </style>
     </head>
     <body>
@@ -191,6 +209,9 @@
                 <h2>7,599</h2>
             </div>
 
+        </div>
+        <div class="msg-circle">
+            <i class="btm-icon fa-solid fa-message"></i>
         </div>
     </body>
 </html>
