@@ -15,6 +15,86 @@
                 box-sizing: border-box;
               
             }
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+    
+            .navbar {
+                background-color: #333;
+                overflow: hidden;
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 5px;
+            }
+            
+            .navbar ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+            }
+    
+            .nav-icon{
+                color: #dbdbdb;
+                font-size: 22px;
+            }
+    
+            .nav-link {
+                display: flex;
+                color: #dbdbdb;
+                align-items: center;
+                border-right: 2px solid rgb(119, 119, 119);
+                padding: 0 10px;
+            }
+    
+            .nav-link a:link{
+                font-size: 12px;
+            }
+    
+            .nav-link:last-child {
+                border-right: none;
+            }
+    
+            .navbar a {
+                color: white;
+                text-decoration: none;
+                padding: 10px;
+                display: block;
+            }
+    
+            .dropdown {
+                position: relative;
+            }
+    
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #333;
+                min-width: 160px;
+                z-index: 1;
+            }
+    
+            .dropdown-content a {
+                color: white;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+    
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+    
+            .nav-icon {
+                margin-right: 5px;
+            }
+    
+            .logo-img{
+                height: 40px;
+                margin-left: 10px;
+            }
             .cards{
                 /* border: 1px solid; */
                 gap: 15px;
@@ -49,33 +129,68 @@
         </style>
     </head>
     <body>
-        <div class="cards">
-   <div>
-       <div ><img src="./img/39622731-12760230.avif" alt=""  >
-       </div>
-       <p>Training Shoe <i class="fa-regular fa-copy"></i></p>
-       <h4>Reebok Women NFX Trainer</h4>
-       <h2>7,599</h2>
-   </div>
-   <div>
-       <div><img src="./img/39627524-12950067.avif" alt=""></div>
-       <p>Training Shoe <i class="fa-regular fa-copy"></i></p>
-       <h4>Reebok Women NFX Trainer</h4>
-       <h2>7,599</h2>
-   </div>
-   <div>
-       <div><img src="./img/39627661-12953271.jpg" alt=""></div>
-       <p>Training Shoe <i class="fa-regular fa-copy"></i></p>
-       <h4>Reebok Women NFX Trainer</h4>
-       <h2>7,599</h2>
-   </div>
-   <div>
-       <div><img src="./img/39628702-12997091.avif" alt=""></div>
-       <p>Training Shoe <i class="fa-regular fa-copy"></i></p>
-       <h4>Reebok Women NFX Trainer</h4>
-       <h2>7,599</h2>
-   </div>
-   
+        <div class="navbar">
+            <ul>
+                <li>
+                    <div class="dropdown">
+                        <a href="#">MORE BRANDS <i
+                                class="fa-solid fa-angle-down"></i></a>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li class="nav-link">
+                    <i class="nav-icon fas fa-location-dot"></i>
+                    <a href="#">STORES</a>
+                </li>
+                <li class="nav-link">
+                    <i class="nav-icon fa-regular fa-message"></i>
+                    <a href="#">CONTACT US</a>
+                </li>
+                <li class="nav-link">
+                    <i class="nav-icon fa-regular fa-user"></i>
+                    <a href="#">LOG IN</a>
+                </li>
+                <li class="nav-link">
+                    <i class="nav-icon fa-regular fa-heart"></i>
+                </li>
+                <li class="nav-link">
+                    <i class="nav-icon fa-solid fa-suitcase"></i>
+                    <img class="logo-img"
+                        src="./img/Aditya-Birla-Group-Logo.jpg"
+                        alt="logo"
+                        height="20px">
+                </li>
+
+            </ul>
         </div>
-   </body>
+        <div class="cards">
+            <div>
+                <div><img src="./img/39622731-12760230.avif" alt>
+                </div>
+                <p>Training Shoe <i class="fa-regular fa-copy"></i></p>
+                <h4>Reebok Women NFX Trainer</h4>
+                <h2>7,599</h2>
+            </div>
+            <div>
+                <div><img src="./img/39627524-12950067.avif" alt></div>
+                <p>Training Shoe <i class="fa-regular fa-copy"></i></p>
+                <h4>Reebok Women NFX Trainer</h4>
+                <h2>7,599</h2>
+            </div>
+            <div>
+                <div><img src="./img/39627661-12953271.jpg" alt></div>
+                <p>Training Shoe <i class="fa-regular fa-copy"></i></p>
+                <h4>Reebok Women NFX Trainer</h4>
+                <h2>7,599</h2>
+            </div>
+            <div>
+                <div><img src="./img/39628702-12997091.avif" alt></div>
+                <p>Training Shoe <i class="fa-regular fa-copy"></i></p>
+                <h4>Reebok Women NFX Trainer</h4>
+                <h2>7,599</h2>
+            </div>
+
+        </div>
+    </body>
 </html>
