@@ -167,6 +167,78 @@
                 right: 10px;
                 padding: 5px 10px;
             }
+            .cdt{
+                color: rgb(5, 40, 84);
+                            }
+                            .cdt>p{
+                                margin: 10px;
+                                font-family: 'Times New Roman', Times, serif;
+                                font-size: 14px;
+                            }
+
+                        /*----Anuj navbar-menu style---*/
+
+                        #navbar-menu{
+                display: grid;
+               grid-template-columns: 200px 500px 500px;
+               padding: 30px;
+            }
+
+            .child1>div{
+                color: rgb(240, 63, 78);
+                font-size: 30px;
+                font-weight: bold;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            #menu{
+                display: flex;
+                flex-direction: row;
+                justify-content:space-between;
+                font-size: 15px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            #menu>span{
+                margin-right:0px;
+                
+            }
+            #menu span:nth-child(7){
+                color: red;
+            }
+            .child2{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin-left: 40px;
+            }
+            #searchbar{
+                border-bottom: .5px solid black;
+            }
+           .child2>button:nth-child(1){
+                border: none;
+                border-bottom: 1px solid black;
+                background-color: #F2F2F2;
+                background: none;
+            }
+            #truck>button{
+                border: none;
+                background-color:rgb(196,12,47);
+                border-radius: 50px;
+                width: 220px;
+                padding: 10px;
+                color: white;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 10px;
+                text-align: left;
+            }
+            #truck>p{
+                color: #F2F2F2;
+            }
+            .fa-solid{
+                margin:5px;
+
+            }
+
+
 
         </style>
     </head>
@@ -206,6 +278,39 @@
 
             </ul>
         </div>
+
+
+                <!--Anuj heading development-->
+
+                <div id="navbar-menu">
+                    <div class="child1">
+                       <div>Reebok<img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Reebok_red_logo.svg" width="50px" height="20px"></div>
+                        </div>
+                        <div id="menu">
+                            <span>NEW</span>
+                            <span>ICONS</span>
+                            <span>MEN</span>
+                            <span>WOMEN</span>
+                            <span>SPORTS</span>
+                            <span>CLASSIC</span>
+                            <span>SALE</span>
+                        </div>
+        
+                    <div class="child2">
+                        <button id="searchbar"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                          </svg></span> Search  Classic</button>
+                          <div id="truck">
+                            <button><i class="fa-solid fa-truck-fast"></i> EXPRESS DELIVERY<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; select your nearest store &gt </button>
+                          </div>
+                    </div>
+        
+                </div>
+        
+        
+                <!--End for heading -->
+        
+        
         <div class="cards">
             <div class="card">
                 <div class="new-text">I AM THE NEW</div>
@@ -213,36 +318,43 @@
                         class="card-heart fa-regular fa-heart"></i></div>
                 <div><img src="./img/39622731-12760230.avif" alt>
                 </div>
-                <p>Training Shoe <i class="fa-regular fa-copy"></i></p>
-                <h4>Reebok Women NFX Trainer</h4>
-                <h2>7,599</h2>
+                <div class="cdt">
+                    <p>Training Shoe <span class="fa-regular fa-copy" style="margin-left: 125px;"></span></p>
+                    <p>Reebok Women NFX Trainer</p>
+                     <b><p>&#x20B9;7,599</p></b>
+            </div>
             </div>
             <div class="card">
                 <div class="new-text">I AM THE NEW</div>
                 <div><i
                         class="card-heart fa-regular fa-heart"></i></div>
                 <div><img src="./img/39627524-12950067.avif" alt></div>
-                <p>Training Shoe <i class="fa-regular fa-copy"></i></p>
-                <h4>Reebok Women NFX Trainer</h4>
-                <h2>7,599</h2>
+                <div class="cdt">
+                    <p>Training Shoe <span class="fa-regular fa-copy" style="margin-left: 125px;"></span></p>
+                    <p>Reebok Women NFX Trainer</p>
+                     <b><p>&#x20B9;7,599</p></b>
+            </div>
             </div>
             <div class="card">
                 <div class="new-text">I AM THE NEW</div>
                 <div><i
                         class="card-heart fa-regular fa-heart"></i></div>
                 <div><img src="./img/39627661-12953271.jpg" alt></div>
-                <p>Training Shoe <i class="fa-regular fa-copy"></i></p>
-                <h4>Reebok Women NFX Trainer</h4>
-                <h2>7,599</h2>
+                <div class="cdt">
+                    <p>Training Shoe <span class="fa-regular fa-copy" style="margin-left: 125px;"></span></p>
+                    <p>Reebok Women NFX Trainer</p>
+                     <b><p>&#x20B9;7,599</p></b>
+            </div>
             </div>
             <div class="card">
                 <div class="new-text">I AM THE NEW</div>
                 <div><i
                         class="card-heart fa-regular fa-heart"></i></div>
                 <div><img src="./img/39628702-12997091.avif" alt></div>
-                <p>Training Shoe <i class="fa-regular fa-copy"></i></p>
-                <h4>Reebok Women NFX Trainer</h4>
-                <h2>7,599</h2>
+                <div class="cdt">
+                    <p>Training Shoe <span class="fa-regular fa-copy" style="margin-left: 125px;"></span></p>
+                    <p>Reebok Women NFX Trainer</p>
+                     <b><p>&#x20B9;7,599</p></b>
             </div>
 
         </div>
