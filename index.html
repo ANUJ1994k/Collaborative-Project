@@ -140,12 +140,17 @@
                 bottom: 25px;
                 right: 25px;
             }
+            .msg-circle-2{
+                position: relative;
+            }
             .btm-icon{
                 font-size: 30px;
                 display: inline-block;
-                margin-top: 18px;
-                margin-left: 18px;
-                color: #dbdbdb;
+                color: #fff;
+
+                position: absolute;
+                top:13px;
+                left: 13px;
             }
             .new-text {
                 position: absolute;
@@ -172,7 +177,6 @@
                             }
                             .cdt>p{
                                 margin: 10px;
-                                font-family: 'Times New Roman', Times, serif;
                                 font-size: 14px;
                             }
 
@@ -188,14 +192,12 @@
                 color: rgb(240, 63, 78);
                 font-size: 30px;
                 font-weight: bold;
-                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             }
             #menu{
                 display: flex;
                 flex-direction: row;
                 justify-content:space-between;
                 font-size: 15px;
-                font-family: 'Times New Roman', Times, serif;
             }
             #menu>span{
                 margin-right:0px;
@@ -226,7 +228,6 @@
                 width: 220px;
                 padding: 10px;
                 color: white;
-                font-family: 'Times New Roman', Times, serif;
                 font-size: 10px;
                 text-align: left;
             }
@@ -279,50 +280,57 @@
             </ul>
         </div>
 
+        <!--Anuj heading development-->
 
-                <!--Anuj heading development-->
+        <div id="navbar-menu">
+            <div class="child1">
+                <div>Reebok<img
+                        src="https://upload.wikimedia.org/wikipedia/commons/1/11/Reebok_red_logo.svg"
+                        width="50px" height="20px"></div>
+            </div>
+            <div id="menu">
+                <span>NEW</span>
+                <span>ICONS</span>
+                <span>MEN</span>
+                <span>WOMEN</span>
+                <span>SPORTS</span>
+                <span>CLASSIC</span>
+                <span>SALE</span>
+            </div>
 
-                <div id="navbar-menu">
-                    <div class="child1">
-                       <div>Reebok<img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Reebok_red_logo.svg" width="50px" height="20px"></div>
-                        </div>
-                        <div id="menu">
-                            <span>NEW</span>
-                            <span>ICONS</span>
-                            <span>MEN</span>
-                            <span>WOMEN</span>
-                            <span>SPORTS</span>
-                            <span>CLASSIC</span>
-                            <span>SALE</span>
-                        </div>
-        
-                    <div class="child2">
-                        <button id="searchbar"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                          </svg></span> Search  Classic</button>
-                          <div id="truck">
-                            <button><i class="fa-solid fa-truck-fast"></i> EXPRESS DELIVERY<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; select your nearest store &gt </button>
-                          </div>
-                    </div>
-        
+            <div class="child2">
+                <button id="searchbar"><span><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-search"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg></span> Search Classic</button>
+                <div id="truck">
+                    <button><i class="fa-solid fa-truck-fast"></i> EXPRESS
+                        DELIVERY<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        select your nearest store &gt </button>
                 </div>
-        
-        
-                <!--End for heading -->
-        
-        
+            </div>
+
+        </div>
+
+        <!--End for heading -->
+
         <div class="cards">
             <div class="card">
                 <div class="new-text">I AM THE NEW</div>
                 <div><i
                         class="card-heart fa-regular fa-heart"></i></div>
-                <div><img src="./img/39622731-12760230.avif" alt>
+                <div><img src="./img/39627958-12965513.avif" alt>
                 </div>
                 <div class="cdt">
-                    <p>Training Shoe <span class="fa-regular fa-copy" style="margin-left: 125px;"></span></p>
+                    <p>Training Shoe <span class="fa-regular fa-copy"
+                            style="margin-left: 125px;"></span></p>
                     <p>Reebok Women NFX Trainer</p>
-                     <b><p>&#x20B9;7,599</p></b>
-            </div>
+                    <b><p>&#x20B9;7,599</p></b>
+                </div>
             </div>
             <div class="card">
                 <div class="new-text">I AM THE NEW</div>
@@ -330,10 +338,11 @@
                         class="card-heart fa-regular fa-heart"></i></div>
                 <div><img src="./img/39627524-12950067.avif" alt></div>
                 <div class="cdt">
-                    <p>Training Shoe <span class="fa-regular fa-copy" style="margin-left: 125px;"></span></p>
+                    <p>Training Shoe <span class="fa-regular fa-copy"
+                            style="margin-left: 125px;"></span></p>
                     <p>Reebok Women NFX Trainer</p>
-                     <b><p>&#x20B9;7,599</p></b>
-            </div>
+                    <b><p>&#x20B9;7,599</p></b>
+                </div>
             </div>
             <div class="card">
                 <div class="new-text">I AM THE NEW</div>
@@ -341,10 +350,11 @@
                         class="card-heart fa-regular fa-heart"></i></div>
                 <div><img src="./img/39627661-12953271.jpg" alt></div>
                 <div class="cdt">
-                    <p>Training Shoe <span class="fa-regular fa-copy" style="margin-left: 125px;"></span></p>
+                    <p>Training Shoe <span class="fa-regular fa-copy"
+                            style="margin-left: 125px;"></span></p>
                     <p>Reebok Women NFX Trainer</p>
-                     <b><p>&#x20B9;7,599</p></b>
-            </div>
+                    <b><p>&#x20B9;7,599</p></b>
+                </div>
             </div>
             <div class="card">
                 <div class="new-text">I AM THE NEW</div>
@@ -352,14 +362,17 @@
                         class="card-heart fa-regular fa-heart"></i></div>
                 <div><img src="./img/39628702-12997091.avif" alt></div>
                 <div class="cdt">
-                    <p>Training Shoe <span class="fa-regular fa-copy" style="margin-left: 125px;"></span></p>
+                    <p>Training Shoe <span class="fa-regular fa-copy"
+                            style="margin-left: 125px;"></span></p>
                     <p>Reebok Women NFX Trainer</p>
-                     <b><p>&#x20B9;7,599</p></b>
-            </div>
+                    <b><p>&#x20B9;7,599</p></b>
+                </div>
 
-        </div>
-        <div class="msg-circle">
-            <i class="btm-icon fa-solid fa-message"></i>
-        </div>
-    </body>
-</html>
+            </div>
+            <div class="msg-circle">
+                <div class="msg-circle-2">
+                    <i class="btm-icon fa-solid fa-message"></i>
+                </div>
+            </div>
+        </body>
+    </html>
